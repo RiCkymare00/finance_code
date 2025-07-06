@@ -45,16 +45,16 @@ for k in c:
     kk = list(k)
     # print(kk)
     i.append(str(kk))
-    prompt = f"Data la seguente lista di paesi: {kk}, restituisci solo la **somma** dei rispettivi indici GRU, senza spiegazioni, solo il numero."
+    prompt = f"Data la seguente lista di paesi: {kk}, restituisci solo la **somma** dei rispettivi indici GPR, senza spiegazioni, solo il numero."
     functions = [{
-        "name": "sum_gru",
-        "description": "Restituisce la somma dei valori GRU",
+        "name": "sum_gpr",
+        "description": "Restituisce la somma dei valori GPR",
         "parameters": {
             "type": "object",
             "properties": {
                 "sum": {
                     "type": "number",
-                    "description": "La somma totale degli indici GRU"
+                    "description": "La somma totale degli indici GPR"
                 }
             },
             "required": ["sum"]
@@ -67,13 +67,13 @@ for k in c:
             {"role": "user", "content": prompt}
         ],
         functions=functions,
-        function_call={"name": "sum_gru"},
+        function_call={"name": "sum_gpr"},
         temperature=0,
         max_tokens=20
     )
     args = json.loads(response.choices[0].message.function_call.arguments)
     gru_sum = args["sum"]
-    print(f"🔢 Somma indici GRU per {kk}: {gru_sum:.2f}")
+    print(f"🔢 Somma indici GPR per {kk}: {gru_sum:.2f}")
     if gru_sum > 2.5:
         continue
     else:
