@@ -1,5 +1,9 @@
 # market_evaluations
 
+## TO DO:
+
+1) correzione indici GPR: necessità passaggio strutturato gpr da json e non come ora :( uffa
+
 # Avvertenza
 
 Questo progetto è stato creato unicamente a scopo formativo e sperimentale.  

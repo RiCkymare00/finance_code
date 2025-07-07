@@ -7,6 +7,8 @@ from itertools import combinations
 import openai
 import json
 
+#gpr origin: https://policyuncertainty.com/gpr.html
+
 def portfolio_yearly_returns(which,months): # non ribilanciato!
     rendimenti = ( dati[which] / dati[which].shift(months) ).mean(axis=1)
     return ( rendimenti.mean(axis=0)**(12/months) -1 )  , rendimenti.std(axis=0), rendimenti.count().sum() 
@@ -41,11 +43,21 @@ c = combinations(dati2.columns,5)
 
 r = []
 i = []
+path = "/Users/riccardomarega/Desktop/market_evaluations/etf_geo/data_gpr_export.json"
+with open(path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+last_record = data[-1]
+last_json = json.dumps(last_record, ensure_ascii=False)
 for k in c:
     kk = list(k)
     # print(kk)
     i.append(str(kk))
-    prompt = f"Data la seguente lista di paesi: {kk}, restituisci solo la **somma** dei rispettivi indici GPR, senza spiegazioni, solo il numero."
+    prompt = (
+        f"Data la seguente riga di dati GPR (mese 06/01/2025):\n"
+        f"{last_json}\n"
+        "Restituisci solo la **somma** degli indici GPR relativi ai paesi {kk}, "
+        "senza spiegazioni, solo il numero."
+    )
     functions = [{
         "name": "sum_gpr",
         "description": "Restituisce la somma dei valori GPR",
@@ -61,7 +73,7 @@ for k in c:
         }
     }]
     response = openai.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "Sei un assistente che restituisce solo risultati numerici."},
             {"role": "user", "content": prompt}
