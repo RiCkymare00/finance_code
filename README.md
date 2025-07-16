@@ -1,45 +1,47 @@
 # market_evaluations
 
-## Risultato analisi equally_weighted_5_etf_geopolitics.py:
+# Risultato Analisi: Equally Weighted 5 ETF Geopolitics
 
-============================================================
-TOP 10 PORTFOLIOS BY SHARPE RATIO
-============================================================
-                                                                              return       vol  valid       GPR  Sharpetti
-['CHINA A', 'TAIWAN', 'SAUDI ARABIA', 'SWITZERLAND', 'SOUTH AFRICA']        0.087801  0.242510    233  2.044635   0.362049
-['CHINA A', 'TAIWAN', 'SWITZERLAND', 'SINGAPORE', 'SOUTH AFRICA']           0.085354  0.248475    233  1.621846   0.343514
-['PACIFIC ex JAPAN', 'CHINA A', 'TAIWAN', 'SWITZERLAND', 'SOUTH AFRICA']    0.086310  0.251460    233  1.968395   0.343235
-['CHINA A', 'CANADA', 'TAIWAN', 'SWITZERLAND', 'SOUTH AFRICA']              0.084968  0.248340    233  2.599113   0.342144
-['CHINA A', 'CANADA', 'TAIWAN', 'SWITZERLAND', 'SINGAPORE']                 0.082945  0.242465    233  2.557527   0.342092
-['PACIFIC ex JAPAN', 'CHINA A', 'TAIWAN', 'SWITZERLAND', 'SINGAPORE']       0.084297  0.247789    233  1.926809   0.340197
-['CHINA A', 'TAIWAN', 'SAUDI ARABIA', 'SWITZERLAND', 'SINGAPORE']           0.084744  0.249869    233  2.003050   0.339154
-['PACIFIC ex JAPAN', 'CHINA A', 'CANADA', 'TAIWAN', 'SWITZERLAND']          0.083909  0.249012    233  2.904075   0.336968
-['TAIWAN', 'SAUDI ARABIA', 'JAPAN SMALL CAP', 'SINGAPORE', 'SOUTH AFRICA']  0.084719  0.252543    233  1.018852   0.335464
-['PACIFIC ex JAPAN', 'CHINA A', 'TAIWAN', 'SAUDI ARABIA', 'SINGAPORE']      0.086876  0.259019    233  2.273357   0.335404
+## 📊 TOP 10 PORTFOLIOS BY SHARPE RATIO
 
-============================================================
-TOP 10 PORTFOLIOS BY LOWEST GPR
-============================================================
-                                                                                     return       vol  valid       GPR  Sharpetti
-['BRAZIL', 'SWITZERLAND', 'SINGAPORE', 'SOUTH AFRICA', 'INDONESIA']                0.109904  0.738024    233  0.221791   0.148916
-['MEXICO', 'SWITZERLAND', 'SINGAPORE', 'SOUTH AFRICA', 'INDONESIA']                0.099266  0.536219    233  0.318825   0.185121
-['BRAZIL', 'MEXICO', 'SINGAPORE', 'SOUTH AFRICA', 'INDONESIA']                     0.111361  0.855916    233  0.325755   0.130108
-['TAIWAN', 'SWITZERLAND', 'SINGAPORE', 'SOUTH AFRICA', 'INDONESIA']                0.101201  0.395314    233  0.346548   0.256002
-['BRAZIL', 'TAIWAN', 'SINGAPORE', 'SOUTH AFRICA', 'INDONESIA']                     0.113214  0.707653    233  0.353479   0.159985
-['BRAZIL', 'MEXICO', 'SWITZERLAND', 'SINGAPORE', 'INDONESIA']                      0.111110  0.758897    233  0.360410   0.146410
-['JAPAN IMI', 'PACIFIC ex JAPAN', 'JAPAN SMALL CAP', 'SINGAPORE', 'INDONESIA']     0.077984  0.433123    257  0.367341   0.180050
-['BRAZIL', 'MEXICO', 'SWITZERLAND', 'SINGAPORE', 'SOUTH AFRICA']                   0.096714  0.628552    233  0.381203   0.153868
-['JAPAN IMI', 'PACIFIC ex JAPAN', 'JAPAN SMALL CAP', 'SINGAPORE', 'SOUTH AFRICA']  0.063231  0.347454    257  0.388134   0.181984
-['BRAZIL', 'TAIWAN', 'SWITZERLAND', 'SINGAPORE', 'INDONESIA']                      0.112964  0.617081    233  0.388134   0.183063
+| Portfolio | Return | Volatility | Valid | GPR | Sharpe Ratio |
+|-----------|--------|------------|-------|-----|--------------|
+| CHINA A, TAIWAN, SAUDI ARABIA, SWITZERLAND, SOUTH AFRICA | 8.78% | 24.25% | 233 | 2.04 | **0.362** |
+| CHINA A, TAIWAN, SWITZERLAND, SINGAPORE, SOUTH AFRICA | 8.54% | 24.85% | 233 | 1.62 | **0.344** |
+| PACIFIC ex JAPAN, CHINA A, TAIWAN, SWITZERLAND, SOUTH AFRICA | 8.63% | 25.15% | 233 | 1.97 | **0.343** |
+| CHINA A, CANADA, TAIWAN, SWITZERLAND, SOUTH AFRICA | 8.50% | 24.83% | 233 | 2.60 | **0.342** |
+| CHINA A, CANADA, TAIWAN, SWITZERLAND, SINGAPORE | 8.29% | 24.25% | 233 | 2.56 | **0.342** |
+| PACIFIC ex JAPAN, CHINA A, TAIWAN, SWITZERLAND, SINGAPORE | 8.43% | 24.78% | 233 | 1.93 | **0.340** |
+| CHINA A, TAIWAN, SAUDI ARABIA, SWITZERLAND, SINGAPORE | 8.47% | 24.99% | 233 | 2.00 | **0.339** |
+| PACIFIC ex JAPAN, CHINA A, CANADA, TAIWAN, SWITZERLAND | 8.39% | 24.90% | 233 | 2.90 | **0.337** |
+| TAIWAN, SAUDI ARABIA, JAPAN SMALL CAP, SINGAPORE, SOUTH AFRICA | 8.47% | 25.25% | 233 | 1.02 | **0.335** |
+| PACIFIC ex JAPAN, CHINA A, TAIWAN, SAUDI ARABIA, SINGAPORE | 8.69% | 25.90% | 233 | 2.27 | **0.335** |
 
-============================================================
-PORTFOLIO STATISTICS
-============================================================
-Total portfolios analyzed: 33649
-Average GPR: 5.92
-Average Sharpe Ratio: 0.1857
-Average Return: 0.0886
-Average Volatility: 0.5028
+## 🌍 TOP 10 PORTFOLIOS BY LOWEST GPR (Geopolitical Risk)
+
+| Portfolio | Return | Volatility | Valid | GPR | Sharpetti Ratio |
+|-----------|--------|------------|-------|-----|--------------|
+| BRAZIL, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 10.99% | 73.80% | 233 | **0.22** | 0.149 |
+| MEXICO, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 9.93% | 53.62% | 233 | **0.32** | 0.185 |
+| BRAZIL, MEXICO, SINGAPORE, SOUTH AFRICA, INDONESIA | 11.14% | 85.59% | 233 | **0.33** | 0.130 |
+| TAIWAN, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 10.12% | 39.53% | 233 | **0.35** | 0.256 |
+| BRAZIL, TAIWAN, SINGAPORE, SOUTH AFRICA, INDONESIA | 11.32% | 70.77% | 233 | **0.35** | 0.160 |
+| BRAZIL, MEXICO, SWITZERLAND, SINGAPORE, INDONESIA | 11.11% | 75.89% | 233 | **0.36** | 0.146 |
+| JAPAN IMI, PACIFIC ex JAPAN, JAPAN SMALL CAP, SINGAPORE, INDONESIA | 7.80% | 43.31% | 257 | **0.37** | 0.180 |
+| BRAZIL, MEXICO, SWITZERLAND, SINGAPORE, SOUTH AFRICA | 9.67% | 62.86% | 233 | **0.38** | 0.154 |
+| JAPAN IMI, PACIFIC ex JAPAN, JAPAN SMALL CAP, SINGAPORE, SOUTH AFRICA | 6.32% | 34.75% | 257 | **0.39** | 0.182 |
+| BRAZIL, TAIWAN, SWITZERLAND, SINGAPORE, INDONESIA | 11.30% | 61.71% | 233 | **0.39** | 0.183 |
+
+## 📈 PORTFOLIO STATISTICS
+
+| Metrica | Valore |
+|---------|--------|
+| **Total portfolios analyzed** | 33,649 |
+| **Average GPR** | 5.92 |
+| **Average Sharpe Ratio** | 0.1857 |
+| **Average Return** | 8.86% |
+| **Average Volatility** | 50.28% |
+
 
 # Avvertenza
 
