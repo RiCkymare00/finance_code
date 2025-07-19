@@ -1,48 +1,5 @@
 # market_evaluations
 
-# Risultato Analisi: Equally Weighted 5 ETF Geopolitics
-
-## 📊 TOP 10 PORTFOLIOS BY SHARPE RATIO
-
-| Portfolio | Return | Volatility | Valid | GPR | Sharpe Ratio |
-|-----------|--------|------------|-------|-----|--------------|
-| CHINA A, TAIWAN, SAUDI ARABIA, SWITZERLAND, SOUTH AFRICA | 8.78% | 24.25% | 233 | 2.04 | **0.362** |
-| CHINA A, TAIWAN, SWITZERLAND, SINGAPORE, SOUTH AFRICA | 8.54% | 24.85% | 233 | 1.62 | **0.344** |
-| PACIFIC ex JAPAN, CHINA A, TAIWAN, SWITZERLAND, SOUTH AFRICA | 8.63% | 25.15% | 233 | 1.97 | **0.343** |
-| CHINA A, CANADA, TAIWAN, SWITZERLAND, SOUTH AFRICA | 8.50% | 24.83% | 233 | 2.60 | **0.342** |
-| CHINA A, CANADA, TAIWAN, SWITZERLAND, SINGAPORE | 8.29% | 24.25% | 233 | 2.56 | **0.342** |
-| PACIFIC ex JAPAN, CHINA A, TAIWAN, SWITZERLAND, SINGAPORE | 8.43% | 24.78% | 233 | 1.93 | **0.340** |
-| CHINA A, TAIWAN, SAUDI ARABIA, SWITZERLAND, SINGAPORE | 8.47% | 24.99% | 233 | 2.00 | **0.339** |
-| PACIFIC ex JAPAN, CHINA A, CANADA, TAIWAN, SWITZERLAND | 8.39% | 24.90% | 233 | 2.90 | **0.337** |
-| TAIWAN, SAUDI ARABIA, JAPAN SMALL CAP, SINGAPORE, SOUTH AFRICA | 8.47% | 25.25% | 233 | 1.02 | **0.335** |
-| PACIFIC ex JAPAN, CHINA A, TAIWAN, SAUDI ARABIA, SINGAPORE | 8.69% | 25.90% | 233 | 2.27 | **0.335** |
-
-## 🌍 TOP 10 PORTFOLIOS BY LOWEST GPR (Geopolitical Risk)
-
-| Portfolio | Return | Volatility | Valid | GPR | Sharpetti Ratio |
-|-----------|--------|------------|-------|-----|--------------|
-| BRAZIL, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 10.99% | 73.80% | 233 | **0.22** | 0.149 |
-| MEXICO, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 9.93% | 53.62% | 233 | **0.32** | 0.185 |
-| BRAZIL, MEXICO, SINGAPORE, SOUTH AFRICA, INDONESIA | 11.14% | 85.59% | 233 | **0.33** | 0.130 |
-| TAIWAN, SWITZERLAND, SINGAPORE, SOUTH AFRICA, INDONESIA | 10.12% | 39.53% | 233 | **0.35** | 0.256 |
-| BRAZIL, TAIWAN, SINGAPORE, SOUTH AFRICA, INDONESIA | 11.32% | 70.77% | 233 | **0.35** | 0.160 |
-| BRAZIL, MEXICO, SWITZERLAND, SINGAPORE, INDONESIA | 11.11% | 75.89% | 233 | **0.36** | 0.146 |
-| JAPAN IMI, PACIFIC ex JAPAN, JAPAN SMALL CAP, SINGAPORE, INDONESIA | 7.80% | 43.31% | 257 | **0.37** | 0.180 |
-| BRAZIL, MEXICO, SWITZERLAND, SINGAPORE, SOUTH AFRICA | 9.67% | 62.86% | 233 | **0.38** | 0.154 |
-| JAPAN IMI, PACIFIC ex JAPAN, JAPAN SMALL CAP, SINGAPORE, SOUTH AFRICA | 6.32% | 34.75% | 257 | **0.39** | 0.182 |
-| BRAZIL, TAIWAN, SWITZERLAND, SINGAPORE, INDONESIA | 11.30% | 61.71% | 233 | **0.39** | 0.183 |
-
-## 📈 PORTFOLIO STATISTICS
-
-| Metrica | Valore |
-|---------|--------|
-| **Total portfolios analyzed** | 33,649 |
-| **Average GPR** | 5.92 |
-| **Average Sharpe Ratio** | 0.1857 |
-| **Average Return** | 8.86% |
-| **Average Volatility** | 50.28% |
-
-
 # Avvertenza
 
 Questo progetto è stato creato unicamente a scopo formativo e sperimentale.  
